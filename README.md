@@ -17,13 +17,13 @@
 	    compile 'com.github.droidstered:DroidsterHttpAPICall:1.1'
 	}
 	
- Now before access method of this class you must initialize BaseAsyncHttpRequest in your Application class otherwise it will throw error.
+ Now before access method of this class you must initialize **BaseAsyncHttpRequest** in your **Application** class otherwise it will throw error.
 	
 	
 	  BaseAsyncHttpRequest.init(getApplicationContext());
 	
 	
-After initialize your class you can use method for your API call by,
+After initialize your class you can use method for your API call in your activity class by,
 
 	 BaseAsyncHttpRequest.executeRequest(this,"Your url", new RequestParams(), new IResponseListener() {
             @Override
