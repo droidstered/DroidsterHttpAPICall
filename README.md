@@ -17,6 +17,9 @@ Step 1. Add it in your root build.gradle at the end of repositories:
 	    compile 'com.github.droidstered:DroidsterHttpAPICall:1.1'
 	}
 	
+   In Applilcation class
+	
+	  BaseAsyncHttpRequest.init(getApplicationContext());
 	
 	
 	 BaseAsyncHttpRequest.executeRequest(this,"Your url", new RequestParams(), new IResponseListener() {
